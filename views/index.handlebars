@@ -1,0 +1,66 @@
+<h1 class="jumbotron text-center">Burgers!</h1>
+
+
+<div class="container text-center leftSideDiv col-md-6">
+<h2>Burgers that are ready to eat!</h2>
+<ul>
+  {{#each burgers}}
+    {{#unless this.eaten}}
+    <li>
+     <img src="https://ih1.redbubble.net/image.219528419.3430/sticker,220x200-bg,ffffff-pad,220x200,ffffff.jpg" alt="Bob's Burger">
+      <h4>{{this.burger_name}}</h4>
+      <p>{{this.burger_descript}}</p>
+          <form action="/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="eaten" value="true"">
+          <button class="btn btn-lg btn-success" type="submit">Devour This Burger!</button>
+      </form>
+      <form action="/{{this.id}}/?_method=DELETE" method="POST">
+          <input type="hidden" name="eaten" value="true"">
+          <button class="btn btn-lg btn-danger" type="submit">I'll Pass!</button>
+      </form>
+    </li>
+
+    {{/unless}}
+  {{/each}}
+</ul>
+    </div>
+
+<div class="container text-center rightSideDiv col-md-6">
+<h2> Burgers that have already been eaten! </h2>
+<ul>
+  {{#each burgers}}
+    {{#if this.eaten}}
+    <li>
+      <h4>{{this.burger_name}}</h4>
+      <p>{{this.burger_descript}}</p>
+      <form action="/{{this.id}}?_method=PUT" method="POST">
+           <input type="hidden" name="eaten" value="false"">
+          <button class="btn btn-lg btn-success" type="submit">Order Another!</button>
+      </form>
+      <form action="/{{this.id}}/?_method=DELETE" method="POST">
+           <input type="hidden" name="eaten" value="false"">
+          <button class="btn btn-lg btn-danger" type="submit">Delete</button>
+      </form>
+    </li>
+  {{/if}}
+  {{/each}}
+</ul>
+</div>
+
+<div class="bottomDiv text-center col-md-12">
+<h2>Add a Burger</h2>
+<form class="create-update-form" action="/" method="POST">
+
+  <div class="form-group">
+    <label for="name">Burger Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+    <div class="form-group">
+    <label for="ca">Enter clever burger description:</label>
+    <input type="text" id="ca" name="description">
+  </div>
+  <button type="submit">Add burger:</button>
+  
+</form>
+</div>

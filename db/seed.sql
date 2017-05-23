@@ -1,0 +1,15 @@
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('The Silentil Night Burger', '(comes with lentils)');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('Poutine on the Ritz Burger', '(comes with poutine fries)');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('Poblano Picasso Burger', 'Yes.');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('Eggers Cant Be Cheesers', '(with fried egg & cheese)');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('Plymouth Roquefort Burger', 'The pilgrims really missed out.');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('The Human Polenta-pede Burger', 'Just because');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('Chile Relleno-You-Didnt Burger', 'Oh yeah, they did.');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('Curd-fect Strangers Burger', '(comes with cheese curds)');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('Last of the Mo-jicama', ' (comes with jicama)');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('Cheeses Is Born Burger', 'Praise this burger!!!');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('Dont You Four Cheddar Bout Me Burger', '(comes with four kinds of cheddar)');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('Paranormal Pepper Jack-tivity Burger', '(comes with scarily hot pepper Jack cheese)');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('Its Fun to Eat at the rYeMCA', '(comes on rye w/ mustard, cheese & avocado)');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('Foot Feta-ish Burger', ' (comes with feta cheese, intended to be Never Been Feta)');
+INSERT INTO burgers (burger_name, burger_descript) VALUES ('I Fought the Slaw Burger', '(And the Slaw Won)'); 
